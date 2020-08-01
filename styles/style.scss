@@ -56,6 +56,11 @@ body {
     }
   }
 
+  .nav-bar .active {
+    background: black;
+    color: white;
+  }
+
   .main {
     height: 100vh;
     display: grid;
@@ -82,6 +87,53 @@ body {
       line-height: 2em;
       width: 90%;
       margin: auto;
+    }
+  }
+
+  .about {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    .about-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .projects {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    .projects-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .contact {
+    height: 100vh;
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    .contact-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
