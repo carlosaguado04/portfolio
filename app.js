@@ -6,7 +6,7 @@ $(function () {
     console.log(top);
     if (scroll >= 770 && scroll <= 1565) {
       header.addClass("scrolled");
-    } else if (scroll >= 2440) {
+    } else if (scroll >= 2420) {
       header.addClass("scrolled");
     } else {
       header.removeClass("scrolled");
