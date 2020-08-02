@@ -1,11 +1,12 @@
-const nav = document.querySelector(".nav-bar");
+$(function () {
+  var header = $(".nav-bar");
 
-window.onscroll = function () {
-  var top = window.scrollY;
-
-  if (top >= 100) {
-    nav.classList.add("active");
-  } else {
-    nav.classList.remove("active");
-  }
-};
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 770) {
+      header.addClass("scrolled");
+    } else {
+      header.removeClass("scrolled");
+    }
+  });
+});

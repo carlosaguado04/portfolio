@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 
   .nav-bar {
     display: grid;
@@ -13,6 +15,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     position: fixed;
     width: 100%;
+    background-color: white;
 
     .logo-container {
       grid-column: 1/2;
@@ -56,9 +59,51 @@ body {
     }
   }
 
-  .nav-bar .active {
-    background: black;
+  .scrolled {
+    background-color: black;
     color: white;
+    transition: 0.3s ease-in-out;
+
+    .logo-container {
+      grid-column: 1/2;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: white;
+        border-right: 3px solid transparent;
+        border-left: 3px solid transparent;
+        padding: 0.2em 0.2em;
+      }
+
+      a:hover {
+        border-right: 3px solid white;
+        border-left: 3px solid white;
+      }
+    }
+
+    .nav-links {
+      grid-column: 3/5;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        padding: 0.2em 0.2em;
+      }
+
+      a:hover {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+      }
+    }
   }
 
   .main {
@@ -100,6 +145,7 @@ body {
 
     .about-title {
       grid-column: 1/2;
+      font-size: 35px;
       grid-row: 1/2;
       display: flex;
       justify-content: center;
@@ -114,6 +160,7 @@ body {
 
     .projects-title {
       grid-column: 1/2;
+      font-size: 35px;
       grid-row: 1/2;
       display: flex;
       justify-content: center;
@@ -130,6 +177,7 @@ body {
 
     .contact-title {
       grid-column: 1/2;
+      font-size: 35px;
       grid-row: 1/2;
       display: flex;
       justify-content: center;
