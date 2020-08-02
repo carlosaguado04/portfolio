@@ -45,8 +45,7 @@ body .nav-bar .logo-container a {
 }
 
 body .nav-bar .logo-container a:hover {
-  border-right: 3px solid black;
-  border-left: 3px solid black;
+  color: #6272a4;
 }
 
 body .nav-bar .nav-links {
@@ -73,8 +72,12 @@ body .nav-bar .nav-links a {
 }
 
 body .nav-bar .nav-links a:hover {
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  color: #6272a4;
+}
+
+body .active {
+  border-right: 1px solid #6272a4;
+  border-left: 1px solid #6272a4;
 }
 
 body .scrolled {
@@ -107,8 +110,7 @@ body .scrolled .logo-container a {
 }
 
 body .scrolled .logo-container a:hover {
-  border-right: 3px solid white;
-  border-left: 3px solid white;
+  color: #6272a4;
 }
 
 body .scrolled .nav-links {
@@ -135,8 +137,7 @@ body .scrolled .nav-links a {
 }
 
 body .scrolled .nav-links a:hover {
-  border-right: 1px solid white;
-  border-left: 1px solid white;
+  color: #6272a4;
 }
 
 body .main {

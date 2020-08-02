@@ -32,8 +32,7 @@ body {
       }
 
       a:hover {
-        border-right: 3px solid black;
-        border-left: 3px solid black;
+        color: #6272a4;
       }
     }
 
@@ -53,10 +52,14 @@ body {
       }
 
       a:hover {
-        border-right: 1px solid black;
-        border-left: 1px solid black;
+        color: #6272a4;
       }
     }
+  }
+
+  .active {
+    border-right: 1px solid #6272a4;
+    border-left: 1px solid #6272a4;
   }
 
   .scrolled {
@@ -79,8 +82,7 @@ body {
       }
 
       a:hover {
-        border-right: 3px solid white;
-        border-left: 3px solid white;
+        color: #6272a4;
       }
     }
 
@@ -100,8 +102,7 @@ body {
       }
 
       a:hover {
-        border-right: 1px solid white;
-        border-left: 1px solid white;
+        color: #6272a4;
       }
     }
   }
