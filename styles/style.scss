@@ -133,6 +133,7 @@ body {
       line-height: 2em;
       width: 90%;
       margin: auto;
+      font-size: 24px;
     }
   }
 
@@ -146,11 +147,11 @@ body {
 
     .about-title {
       grid-column: 1/2;
-      font-size: 35px;
+      font-size: 30px;
       grid-row: 1/2;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
     }
   }
   .projects {
@@ -161,11 +162,11 @@ body {
 
     .projects-title {
       grid-column: 1/2;
-      font-size: 35px;
+      font-size: 30px;
       grid-row: 1/2;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
     }
   }
   .contact {
@@ -178,11 +179,11 @@ body {
 
     .contact-title {
       grid-column: 1/2;
-      font-size: 35px;
+      font-size: 30px;
       grid-row: 1/2;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
     }
   }
 }
