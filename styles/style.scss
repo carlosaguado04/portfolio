@@ -7,7 +7,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  /*overflow: hidden;*/
+  overflow: hidden;
 
   .nav-bar {
     display: grid;
@@ -32,7 +32,7 @@ body {
       }
 
       a:hover {
-        color: #6272a4;
+        color: #ff79c6;
       }
     }
 
@@ -52,14 +52,14 @@ body {
       }
 
       a:hover {
-        color: #6272a4;
+        color: #ff79c6;
       }
     }
   }
 
   .active {
-    border-right: 1px solid #6272a4;
-    border-left: 1px solid #6272a4;
+    border-right: 2px solid #ff79c6;
+    border-left: 2px solid #ff79c6;
   }
 
   .scrolled {
@@ -82,7 +82,7 @@ body {
       }
 
       a:hover {
-        color: #6272a4;
+        color: #ff79c6;
       }
     }
 
@@ -102,7 +102,7 @@ body {
       }
 
       a:hover {
-        color: #6272a4;
+        color: #ff79c6;
       }
     }
   }
