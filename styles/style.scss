@@ -195,14 +195,7 @@ body {
       justify-content: center;
       align-items: center;
     }
-    &:after {
-      grid-column: 1/2;
-      grid-row: 4/5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 95px;
-      margin-bottom: 29px;
+    .about-text::after {
       font-size: 30px;
       color: #50fa7b;
       content: "|";
