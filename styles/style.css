@@ -8,7 +8,6 @@
 
 body {
   font-family: "Fira Code", monospace;
-  overflow: hidden;
 }
 
 body .nav-bar {
@@ -66,9 +65,12 @@ body .nav-bar .nav-links {
 body .nav-bar .nav-links a {
   text-decoration: none;
   color: #50fa7b;
-  border-right: 1px solid transparent;
   border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   padding: 0.2em 0.2em;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 body .nav-bar .nav-links a:hover {
@@ -76,9 +78,8 @@ body .nav-bar .nav-links a:hover {
 }
 
 body .active {
-  border-right: 2px solid #50fa7b;
-  border-left: 2px solid #50fa7b;
-  color: #ff79c6;
+  color: #f1fa8c;
+  border-bottom: 1px solid #f1fa8c;
 }
 
 body .scrolled {
@@ -253,24 +254,7 @@ body .about .about-text {
           align-items: center;
 }
 
-body .about:after {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 95px;
-  margin-bottom: 29px;
+body .about .about-text::after {
   font-size: 30px;
   color: #50fa7b;
   content: "|";
@@ -338,5 +322,52 @@ body .contact .contact-title {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+body .contact .icons {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 75px;
+}
+
+body .contact .icons a i {
+  text-decoration: none;
+  color: #ff5555;
+  outline: none;
+}
+
+body .contact .icons a i:hover {
+  color: #50fa7b;
+}
+
+body .contact .footer {
+  background-color: #44475a;
+  margin-top: 150px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
 }
 /*# sourceMappingURL=style.css.map */

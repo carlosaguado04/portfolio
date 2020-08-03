@@ -7,7 +7,6 @@
 
 body {
   font-family: "Fira Code", monospace;
-  overflow: hidden;
 
   .nav-bar {
     display: grid;
@@ -46,9 +45,11 @@ body {
       a {
         text-decoration: none;
         color: #50fa7b;
-        border-right: 1px solid transparent;
         border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
         padding: 0.2em 0.2em;
+        border-bottom: 5px solid transparent;
+        transition: 0.2s ease-in-out;
       }
 
       a:hover {
@@ -58,9 +59,8 @@ body {
   }
 
   .active {
-    border-right: 2px solid #50fa7b;
-    border-left: 2px solid #50fa7b;
-    color: #ff79c6;
+    color: #f1fa8c;
+    border-bottom: 1px solid #f1fa8c;
   }
 
   .scrolled {
@@ -234,6 +234,36 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
+    }
+
+    .icons {
+      grid-column: 1/5;
+      grid-row: 2/4;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 75px;
+
+      a i {
+        text-decoration: none;
+        color: #ff5555;
+        outline: none;
+      }
+
+      a i:hover {
+        color: #50fa7b;
+      }
+    }
+
+    .footer {
+      background-color: #44475a;
+      margin-top: 150px;
+      grid-column: 1/5;
+      height: 7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 3px;
     }
   }
 }
