@@ -68,7 +68,6 @@ body .nav-bar .nav-links a {
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   padding: 0.2em 0.2em;
-  border-bottom: 5px solid transparent;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
@@ -78,8 +77,8 @@ body .nav-bar .nav-links a:hover {
 }
 
 body .active {
-  color: #f1fa8c;
-  border-bottom: 1px solid #f1fa8c;
+  border-left: 1px solid #f1fa8c;
+  border-right: 1px solid #f1fa8c;
 }
 
 body .scrolled {
@@ -105,9 +104,6 @@ body .scrolled .logo-container {
 body .scrolled .logo-container a {
   text-decoration: none;
   color: #ff5555;
-  border-right: 3px solid transparent;
-  border-left: 3px solid transparent;
-  padding: 0.2em 0.2em;
 }
 
 body .scrolled .logo-container a:hover {
