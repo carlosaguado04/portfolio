@@ -250,7 +250,7 @@ body .about .about-text {
           align-items: center;
 }
 
-body .about .about-text::after {
+body .about .about-text p::after {
   font-size: 30px;
   color: #50fa7b;
   content: "|";
