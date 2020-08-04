@@ -2,6 +2,7 @@
 
 ## TODO
 
-- create a black and white vector for the main page
-- think of good minimal design for the about, projects, and contact page.
-- possibly some animations
+{} Make site responsive
+{} Find a way to display my projects in te projects tab
+{} Add a picture of me into the about tab. Try to make it fit an look good.
+{} Add two options to see my cv: online and offline.
