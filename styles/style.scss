@@ -178,6 +178,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
+      color: #50fa7b;
     }
 
     .about-text {
@@ -191,10 +192,11 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      color: #50fa7b;
     }
     .about-text p::after {
       font-size: 30px;
-      color: #50fa7b;
+      color: #ff5555;
       content: "|";
       animation: blink 500ms linear infinite alternate;
     }
@@ -213,11 +215,11 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      color: #50fa7b;
+      color: #ff5555;
     }
   }
   .contact {
-    height: 100vh;
+    height: 93vh;
     display: grid;
     background-color: #282a36;
     color: #ff5555;
@@ -231,6 +233,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
+      color: #50fa7b;
     }
 
     .icons {
@@ -240,15 +243,16 @@ body {
       justify-content: space-around;
       align-items: center;
       font-size: 75px;
+      color: #50fa7b;
 
       a i {
         text-decoration: none;
-        color: #ff5555;
+        color: #50fa7b;
         outline: none;
       }
 
       a i:hover {
-        color: #50fa7b;
+        color: #ff5555;
       }
     }
 
@@ -261,6 +265,7 @@ body {
       justify-content: center;
       align-items: center;
       letter-spacing: 3px;
+      color: #50fa7b;
     }
   }
 }

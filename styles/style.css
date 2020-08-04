@@ -225,6 +225,7 @@ body .about .about-title {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  color: #50fa7b;
 }
 
 body .about .about-text {
@@ -248,11 +249,12 @@ body .about .about-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #50fa7b;
 }
 
 body .about .about-text p::after {
   font-size: 30px;
-  color: #50fa7b;
+  color: #ff5555;
   content: "|";
   -webkit-animation: blink 500ms linear infinite alternate;
           animation: blink 500ms linear infinite alternate;
@@ -286,11 +288,11 @@ body .projects .projects-title {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  color: #50fa7b;
+  color: #ff5555;
 }
 
 body .contact {
-  height: 100vh;
+  height: 93vh;
   display: -ms-grid;
   display: grid;
   background-color: #282a36;
@@ -318,6 +320,7 @@ body .contact .contact-title {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  color: #50fa7b;
 }
 
 body .contact .icons {
@@ -336,16 +339,17 @@ body .contact .icons {
       -ms-flex-align: center;
           align-items: center;
   font-size: 75px;
+  color: #50fa7b;
 }
 
 body .contact .icons a i {
   text-decoration: none;
-  color: #ff5555;
+  color: #50fa7b;
   outline: none;
 }
 
 body .contact .icons a i:hover {
-  color: #50fa7b;
+  color: #ff5555;
 }
 
 body .contact .footer {
@@ -365,5 +369,6 @@ body .contact .footer {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 3px;
+  color: #50fa7b;
 }
 /*# sourceMappingURL=style.css.map */
