@@ -11,7 +11,7 @@ body {
   .nav-bar {
     display: grid;
     height: 8vh;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     position: fixed;
     width: 100%;
     background: rgba(40, 42, 54, 0.8);
@@ -56,6 +56,16 @@ body {
       a:hover {
         color: #f1fa8c;
       }
+    }
+    .icon {
+      grid-column: 4/5;
+      color: #50fa7b;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
     }
   }
 
@@ -108,10 +118,14 @@ body {
   .main {
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-rows: repeat(5, 1fr);
     background-color: #282a36;
     color: #f1fa8c;
+
+    .main-text {
+      display: none;
+    }
 
     pre {
       grid-column: 1/5;

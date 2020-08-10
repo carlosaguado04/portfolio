@@ -3,3 +3,13 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .main {
+    font-size: 15px;
+  }
+
+  pre {
+    display: none;
+  }
+}

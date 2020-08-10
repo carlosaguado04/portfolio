@@ -14,8 +14,8 @@ body .nav-bar {
   display: -ms-grid;
   display: grid;
   height: 8vh;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   position: fixed;
   width: 100%;
   background: rgba(40, 42, 54, 0.8);
@@ -75,6 +75,25 @@ body .nav-bar .nav-links a {
 
 body .nav-bar .nav-links a:hover {
   color: #f1fa8c;
+}
+
+body .nav-bar .icon {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  color: #50fa7b;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
 }
 
 body .active {
@@ -142,12 +161,16 @@ body .main {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
   background-color: #282a36;
   color: #f1fa8c;
+}
+
+body .main .main-text {
+  display: none;
 }
 
 body .main pre {
